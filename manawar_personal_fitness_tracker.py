@@ -14,6 +14,13 @@
 #   both "Improving" and "Declining". This program reports "Improving".
 # - Duration must be at least 1 minute, which prevents division by zero.
 # - Workout names longer than the table column are shortened in the table only.
+#
+# Test results (actual output):
+# Low intensity     180 cal, 45 min -> 4.0 cal/min  | Intensity: Low
+# Moderate          300 cal, 40 min -> 7.5 cal/min  | Intensity: Moderate
+# High intensity    320 cal, 30 min -> 10.7 cal/min | Intensity: High
+# Boundary 5.0      250 cal, 50 min -> 5.0 cal/min  | Intensity: Moderate
+# Boundary 10.0     200 cal, 20 min -> 10.0 cal/min | Intensity: High
 # ==============================================================================
 
 
